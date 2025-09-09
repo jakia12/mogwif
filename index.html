@@ -46,6 +46,158 @@
     <link href="assets/css/rtl.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/responsive.css" rel="stylesheet" />
+
+    <!-- how to buy css -->
+    <style>
+      :root {
+        /* SUI-inspired palette */
+        --sui-blue: #6fbcf0; /* primary */
+        --sui-blue-deep: #0e5bb5; /* headings/accents */
+        --sui-blue-ink: #0b2540; /* body text */
+        --sui-bg: #f6faff; /* soft background */
+        --sui-yellow: #f6c94c; /* secondary */
+        --card-bg: #ffffff;
+        --border: #e6f0fa;
+        --shadow: 0 10px 24px rgba(14, 91, 181, 0.1);
+      }
+
+      .sui-buy {
+        background: #113cd5;
+      }
+
+      .sui-container {
+        max-width: 1120px;
+        margin: 0 auto;
+      }
+
+      .sui-title {
+        text-align: center;
+        font-size: clamp(28px, 3vw, 40px);
+        line-height: 1.15;
+        margin: 0 0 28px;
+        color: #fde039;
+        letter-spacing: 0.3px;
+        margin-bottom: 6%;
+      }
+
+      .sui-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr; /* text left, image right */
+        gap: clamp(24px, 3vw, 40px);
+        align-items: stretch;
+      }
+
+      /* Left column */
+      .sui-intro {
+        margin: 4px 0 16px;
+        color: var(--sui-blue-ink);
+        opacity: 0.9;
+      }
+
+      .sui-steps {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 14px;
+      }
+
+      .sui-step {
+        position: relative;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 14px;
+        padding: 16px 16px 16px 14px;
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        border-left: 6px solid var(--sui-yellow);
+        border-radius: 14px;
+        box-shadow: var(--shadow);
+      }
+
+      .sui-step__badge {
+        height: 38px;
+        width: 38px;
+        display: inline-grid;
+        place-items: center;
+        font-weight: 700;
+        border-radius: 50%;
+        background: linear-gradient(
+          135deg,
+          var(--sui-blue),
+          var(--sui-blue-deep)
+        );
+        color: #fff;
+        box-shadow: 0 6px 14px rgba(14, 91, 181, 0.25);
+      }
+
+      .sui-step__title {
+        margin: 2px 0 6px;
+        font-size: 18px;
+        color: var(--sui-blue-deep);
+      }
+
+      .sui-step__text {
+        margin: 0;
+        color: var(--sui-blue-ink);
+        opacity: 0.95;
+      }
+
+      .sui-note {
+        margin-top: 16px;
+        font-size: 14px;
+        background: #fff9e6;
+        color: #6a5200;
+        border: 1px solid #ffe59a;
+        padding: 10px 12px;
+        border-radius: 10px;
+      }
+
+      /* Right column (image) */
+      .sui-figure {
+        margin: 0;
+        background: var(--card-bg);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+      }
+
+      .sui-illustration {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+      }
+
+      .sui-figcaption {
+        font-size: 12px;
+        padding: 10px 12px;
+        color: var(--sui-blue-ink);
+        background: linear-gradient(0deg, #ffffff 0%, #fafcff 100%);
+        border-top: 1px solid var(--border);
+      }
+
+      /* Stretch the image column to full row height and center its contents */
+      .sui-image-col {
+        align-self: stretch;
+        display: flex;
+        align-items: center; /* vertical center within the stretched column */
+        justify-content: center;
+        height: 100%;
+      }
+
+      /* Responsive */
+      @media (max-width: 920px) {
+        .sui-grid {
+          grid-template-columns: 1fr;
+        }
+        .sui-figure {
+          order: 2;
+        }
+      }
+    </style>
   </head>
 
   <!-- page wrapper -->
@@ -88,6 +240,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#tokenomics">Tokenomics</a></li>
+                    <li><a href="#howtobuy">How To Buy</a></li>
                     <li><a href="#roadmap">Roadmap</a></li>
                   </ul>
                 </div>
@@ -538,6 +691,91 @@
     </section>
     <!-- project-section end -->
 
+    <!-- how to buy section start -->
+    <section id="howtobuy">
+      <section id="how-to-buy" class="sui-buy">
+        <div class="sui-container">
+          <h2 class="sui-title">How to Buy $MOGWIF</h2>
+
+          <div class="sui-grid">
+            <!-- Left: steps -->
+            <div class="sui-steps-col">
+              <!-- <p class="sui-intro">
+                A quick 4-step guide to get SUI on the Sui network.
+              </p> -->
+
+              <ol class="sui-steps">
+                <li class="sui-step">
+                  <span class="sui-step__badge">1</span>
+                  <div class="sui-step__body">
+                    <h3 class="sui-step__title">Get a Sui wallet</h3>
+                    <p class="sui-step__text">
+                      Install a Sui wallet and securely back up your recovery
+                      phrase.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="sui-step">
+                  <span class="sui-step__badge">2</span>
+                  <div class="sui-step__body">
+                    <h3 class="sui-step__title">Fund your wallet</h3>
+                    <p class="sui-step__text">
+                      Buy SUI on a supported exchange or bridge USDC/USDT to
+                      Sui, then withdraw to your wallet address.
+                    </p>
+                  </div>
+                </li>
+
+                <li class="sui-step">
+                  <span class="sui-step__badge">3</span>
+                  <div class="sui-step__body">
+                    <h3 class="sui-step__title">Connect to a DEX</h3>
+                    <p class="sui-step__text">
+                      Open a Sui DEX, connect your wallet, copy and paste our
+                      $MOGWIF contract address
+                    </p>
+                  </div>
+                </li>
+
+                <li class="sui-step">
+                  <span class="sui-step__badge">4</span>
+                  <div class="sui-step__body">
+                    <h3 class="sui-step__title">Swap & confirm</h3>
+                    <p class="sui-step__text">
+                      Enter the amount, review fees, confirm the transaction,
+                      and keep a little SUI for gas.
+                    </p>
+                  </div>
+                </li>
+              </ol>
+
+              <div class="sui-note">
+                <strong>Tip:</strong> If a swap fails, increase slippage
+                slightly and retry.
+              </div>
+            </div>
+
+            <!-- Right: image -->
+            <div class="sui-image-col">
+              <figure class="sui-figure">
+                <!-- Replace the src below with your image -->
+                <img
+                  src="./images/htb.jpg"
+                  alt="How to buy SUI illustration"
+                  class="sui-illustration"
+                />
+                <figcaption class="sui-figcaption">
+                  $MOGWIF • Fast • Secure • Scalable
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- how to buy section end -->
+
     <!-- testimonial-style-two -->
     <section class="testimonial-style-two text-center" id="roadmap">
       <div
@@ -712,7 +950,7 @@
               >
             </li>
             <li>
-              <a href="twitterlink" target="_blank"
+              <a href="https://x.com/MogWifHatBase" target="_blank"
                 ><img src="assets/images/resource/twitter.png" alt="" />
                 Twitter</a
               >
