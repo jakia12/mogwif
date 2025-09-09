@@ -63,10 +63,10 @@
 
  ***/
 
- @font-face {
+@font-face {
   font-family: "Cooper";
-  src: url('../../fonts/COOPBL.TTF');
- }
+  src: url("../../fonts/COOPBL.TTF");
+}
 
 body {
   font-size: 20px;
@@ -3531,8 +3531,9 @@ div#mCSB_1_container {
 .testimonial-style-two .testimonial-content .inner-box {
   position: relative;
   display: block;
-  background: #fff;
-  border-radius: 10px;
+  background: #fde039;
+  border: 2px solid black;
+  border-radius: 5px;
   padding: 0px 50px 53px 50px;
   box-shadow: 0 10px 50px 0px rgba(0, 0, 0, 0.2);
 }
@@ -5270,8 +5271,9 @@ div#mCSB_1_container {
   display: block;
   text-align: center;
   background: #fde039;
-  border-radius: 10px;
-  box-shadow: 0 20px 50px 5px #6d6d6d;
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: 0 10px 20px 5px #6d6d6d;
   padding: 70px 50px 50px 50px;
   transition: all 500ms ease;
 }
